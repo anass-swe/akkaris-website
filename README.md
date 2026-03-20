@@ -1,54 +1,29 @@
-# Akkaris — Studio Website
+# Akkaris
 
-Static site for akkaris.dev / GitHub Pages.
+Akkaris is an independent game studio based in Morocco.
 
-## Files
+This repository contains the source for the studio website and the current game pages.
 
-```
-akkaris-site/
-├── index.html      ← Homepage (hero, games, about)
-├── privacy.html    ← Privacy policy (all games)
-├── style.css       ← Full brand stylesheet
-└── README.md
-```
+## What’s here
 
-## GitHub Pages deployment
+- Studio website
+- Game showcase
+- Privacy policy for the available games
 
-1. Create a new repo named `akkaris.github.io` (or `your-username.github.io`)
-2. Push these files to the `main` branch root
-3. Go to repo Settings → Pages → Source: Deploy from branch → main → / (root)
-4. Site goes live at `https://your-username.github.io`
+## Current game
 
-### Custom domain (optional)
-- Add a `CNAME` file containing your domain (e.g. `akkaris.dev`)
-- Point your domain's DNS to GitHub Pages IPs:
-  ```
-  A     185.199.108.153
-  A     185.199.109.153
-  A     185.199.110.153
-  A     185.199.111.153
-  ```
+- Splitline
 
-## Before publishing checklist
+## Links
 
-- [ ] Replace `<!-- TODO: update date before publishing -->` in privacy.html with today's date
-- [ ] Update the Google Play download link in index.html (replace `href="#"` with real URL)
-- [ ] Update `contact@akkaris.dev` and `privacy@akkaris.dev` with your real email address
-- [ ] Update the OG meta tags in index.html with your real domain URL
-- [ ] Add `og:image` with a 1200×630 screenshot once the site is live
-- [ ] Add a real `CNAME` file if using a custom domain
+- Website: [akkaris.dev](https://akkaris.dev)
+- Privacy policy: [akkaris.dev/privacy.html](https://akkaris.dev/privacy.html)
+- Contact: [contact@akkaris.site](mailto:contact@akkaris.site)
 
-## Adding a new game
+## About the studio
 
-1. In `index.html`, duplicate the Splitline `<article class="game-card">` block
-2. Update title, description, tags, download link
-3. In `privacy.html`, duplicate the Splitline `<div class="privacy-game-block">` block
-4. Update all game-specific policy text
+Akkaris builds mobile games with tight mechanics, clear feedback, and respect for the player’s time.
 
-## Fonts
+## About the game
 
-Uses Google Fonts (loaded from CDN):
-- **Instrument Serif** — display / hero headings
-- **DM Sans** — body, UI, labels
-
-No build step required. Pure HTML/CSS/JS.
+Splitline is a free mobile arcade game that focuses on simple controls and fast, skill-based gameplay.
