@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akkaris — independent game studio crafting mobile games with care. Based in Morocco.">
+  <meta property="og:title" content="Akkaris — Games crafted with care">
+  <meta property="og:description" content="Independent mobile game studio based in Morocco.">
+  <meta property="og:type" content="website">
+  <title>Akkaris — Games crafted with care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Inline favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpolygon points='32,4 56,32 32,46 8,32' fill='%23F2A623'/%3E%3Cpolygon points='32,18 50,32 32,60 14,32' fill='%231a1a24' opacity='.88'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23F2A623'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Akkaris home">
+      <svg class="nav-mark" width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <polygon points="32,4 56,32 32,46 8,32" fill="#F2A623" opacity="0.95"/>
+        <polygon points="32,18 50,32 32,60 14,32" fill="#1a1a24" opacity="0.88"/>
+        <circle cx="32" cy="32" r="4" fill="#F2A623"/>
+      </svg>
+      <span class="nav-wordmark">Akkaris</span>
+    </a>
+    <div class="nav-links">
+      <a href="#games" class="nav-link">Games</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="privacy.html" class="nav-link">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <canvas id="star-canvas"></canvas>
+    <div class="hero-grid"></div>
+    <div class="hero-gradient-left"></div>
+    <div class="hero-gradient-right"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Independent game studio · Morocco</div>
+    <h1 class="hero-title">
+      <span>Games</span>
+      crafted with care
+    </h1>
+    <p class="hero-subtitle">
+      One-person indie studio. Software engineer by trade, game developer by passion.
+    </p>
+    <p class="hero-body">
+      Every mechanic considered. Every pixel placed.
+      Games designed to respect your time and reward your skill.
+    </p>
+    <a href="#games" class="btn-primary">
+      Explore games
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+  <div class="hero-mark" aria-hidden="true">
+    <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="120,8 220,120 120,168 20,120" fill="#F2A623" opacity="0.08"/>
+      <polygon points="120,8 220,120 120,168 20,120" fill="none" stroke="#F2A623" stroke-width="1" opacity="0.3"/>
+      <polygon points="120,56 196,120 120,232 44,120" fill="#F2A623" opacity="0.05"/>
+      <polygon points="120,56 196,120 120,232 44,120" fill="none" stroke="#F2A623" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="120" cy="120" r="12" fill="#F2A623" opacity="0.15"/>
+      <circle cx="120" cy="120" r="6" fill="#F2A623" opacity="0.4"/>
+      <circle cx="120" cy="120" r="2.5" fill="#F2A623" opacity="0.9"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ── GAMES ────────────────────────────────────────────── -->
+<section class="games-section" id="games">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Games</div>
+      <h2 class="section-title">What we've built</h2>
+    </div>
+
+    <div class="games-grid">
+
+      <!-- SPLITLINE -->
+      <article class="game-card" id="splitline">
+        <div class="game-card-visual">
+          <div class="game-preview splitline-preview" aria-label="Splitline game preview">
+            <canvas id="splitline-canvas" class="game-canvas"></canvas>
+            <div class="game-badge">New</div>
+          </div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-meta">
+            <span class="game-tag">Mobile</span>
+            <span class="game-tag">Arcade</span>
+            <span class="game-tag">Free</span>
+          </div>
+          <h3 class="game-title">Splitline</h3>
+          <p class="game-desc">
+            One tap. Two sides. Gravity pulls you back. Jump away from the center line,
+            curve through the gap, and survive as long as you can.
+            A one-button arcade game that's easy to learn and hard to master.
+          </p>
+          <div class="game-details">
+            <div class="game-detail">
+              <span class="detail-label">Platform</span>
+              <span class="detail-value">Mobile</span>
+            </div>
+            <div class="game-detail">
+              <span class="detail-label">Genre</span>
+              <span class="detail-value">Arcade · Survival</span>
+            </div>
+            <div class="game-detail">
+              <span class="detail-label">Price</span>
+              <span class="detail-value">Free to play</span>
+            </div>
+          </div>
+          <div class="game-actions">
+            <a href="#" class="btn-store" aria-label="Download Splitline on Google Play">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.5c.4.22.88.22 1.28 0l14-8.08-3.06-3.06L3.18 23.5zm15.64-9.58-3.82-2.2L18.82 8l-3.82-2.2-11.82-6.8v.02L14.82 8 12 10.82l3.06 3.06 3.76-2.17 1-.58-1 .59zM3.18.5C2.78.28 2.3.28 1.9.5c-.4.22-.9.64-.9 1.14v20.72c0 .5.5.92.9 1.14z"/></svg>
+              Google Play
+            </a>
+            <span class="btn-store btn-store-disabled" aria-disabled="true" title="Not available on iOS yet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </span>
+            <a href="privacy.html#splitline" class="btn-ghost">Privacy policy</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLACEHOLDER — future game teaser -->
+      <article class="game-card game-card-upcoming">
+        <div class="game-card-visual">
+          <div class="game-preview upcoming-preview" aria-label="Upcoming game">
+            <div class="upcoming-mark" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="80" height="80" fill="none">
+                <circle cx="60" cy="60" r="40" stroke="#F2A623" stroke-width="1" opacity="0.3" stroke-dasharray="4 4"/>
+                <circle cx="60" cy="60" r="8" fill="#F2A623" opacity="0.2"/>
+                <circle cx="60" cy="60" r="3" fill="#F2A623" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="game-badge game-badge-soon">Soon</div>
+          </div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-meta">
+            <span class="game-tag game-tag-dim">Mobile</span>
+          </div>
+          <h3 class="game-title game-title-dim">Next game</h3>
+          <p class="game-desc game-desc-dim">
+            Something new is being built. Follow the studio to be the first to know when it launches.
+          </p>
+          <div class="game-actions">
+            <a href="#about" class="btn-ghost">Stay in touch</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ────────────────────────────────────────────── -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-mark" aria-hidden="true">
+        <svg viewBox="0 0 160 160" width="160" height="160" fill="none">
+          <polygon points="80,6 150,80 80,110 10,80" fill="#F2A623" opacity="0.06"/>
+          <polygon points="80,6 150,80 80,110 10,80" stroke="#F2A623" stroke-width="0.75" opacity="0.25"/>
+          <polygon points="80,36 126,80 80,154 34,80" fill="#F2A623" opacity="0.04"/>
+          <polygon points="80,36 126,80 80,154 34,80" stroke="#F2A623" stroke-width="0.5" opacity="0.15"/>
+          <circle cx="80" cy="80" r="5" fill="#F2A623" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="about-content">
+        <div class="section-eyebrow">About</div>
+        <h2 class="about-title">
+          <span class="serif-italic">One person.</span><br>
+          Every decision considered.
+        </h2>
+        <div class="about-body">
+          <p>
+            Akkaris is a one-person independent game studio based in Kenitra, Morocco.
+            I'm a software engineer by trade with a genuine interest in making games.
+          </p>
+          <p>
+            I build games with a focus on tight mechanics, satisfying feedback, and
+            respect for the player's time. No filler. No padding. Just the game.
+          </p>
+          <p>
+            Every game starts with a single mechanic that feels good — and then gets built
+            carefully around that feeling until it's ready to ship.
+          </p>
+        </div>
+        <div class="about-tags">
+          <span class="about-tag">Software engineer by trade</span>
+          <span class="about-tag">Game developer by choice</span>
+          <span class="about-tag">Morocco</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo" aria-label="Akkaris home">
+        <svg width="22" height="22" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <polygon points="32,4 56,32 32,46 8,32" fill="#F2A623" opacity="0.9"/>
+          <polygon points="32,18 50,32 32,60 14,32" fill="#888784" opacity="0.6"/>
+          <circle cx="32" cy="32" r="4" fill="#F2A623"/>
+        </svg>
+        <span>Akkaris</span>
+      </a>
+      <div class="footer-links">
+        <a href="privacy.html" class="footer-link">Privacy policy</a>
+        <a href="mailto:contact@akkaris.dev" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-copy">
+        &copy; <span id="year"></span> Akkaris. Built with care.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Nav scroll shadow
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('nav-scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.game-card, .about-inner, .section-header');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+
+// Star field canvas
+(function() {
+  const canvas = document.getElementById('star-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let stars = [], W, H, animId;
+
+  function resize() {
+    W = canvas.width  = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+  }
+
+  function initStars() {
+    stars = [];
+    for (let i = 0; i < 80; i++) {
+      stars.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: 0.4 + Math.random() * 1.4,
+        speed: 0.1 + Math.random() * 0.35,
+        alpha: 0.08 + Math.random() * 0.22,
+        side: Math.random() < 0.5 ? 'left' : 'right'
+      });
+    }
+  }
+
+  function drawStars() {
+    ctx.clearRect(0, 0, W, H);
+    for (const s of stars) {
+      s.y += s.speed;
+      if (s.y > H + 4) { s.y = -4; s.x = Math.random() * W; }
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = s.side === 'left'
+        ? `rgba(55,215,255,${s.alpha})`
+        : `rgba(239,103,255,${s.alpha})`;
+      ctx.fill();
+    }
+    animId = requestAnimationFrame(drawStars);
+  }
+
+  window.addEventListener('resize', () => { resize(); initStars(); }, { passive: true });
+  resize(); initStars(); drawStars();
+})();
+
+// Splitline mini preview canvas
+(function() {
+  const canvas = document.getElementById('splitline-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let t = 0;
+
+  function draw() {
+    const W = canvas.width = canvas.offsetWidth;
+    const H = canvas.height = canvas.offsetHeight;
+    const MX = W / 2;
+    t += 0.018;
+
+    // Halves
+    ctx.fillStyle = '#0a1e33'; ctx.fillRect(0, 0, MX, H);
+    ctx.fillStyle = '#1a0a2e'; ctx.fillRect(MX, 0, MX, H);
+
+    // Glow
+    const gL = ctx.createLinearGradient(0, 0, MX, 0);
+    gL.addColorStop(0, 'rgba(55,215,255,0)');
+    gL.addColorStop(1, 'rgba(55,215,255,0.14)');
+    ctx.fillStyle = gL; ctx.fillRect(0, 0, MX, H);
+    const gR = ctx.createLinearGradient(MX, 0, W, 0);
+    gR.addColorStop(0, 'rgba(239,103,255,0.14)');
+    gR.addColorStop(1, 'rgba(239,103,255,0)');
+    ctx.fillStyle = gR; ctx.fillRect(MX, 0, MX, H);
+
+    // Grid
+    ctx.strokeStyle = 'rgba(255,255,255,0.025)'; ctx.lineWidth = 1;
+    for (let x = 30; x < W; x += 36) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,H); ctx.stroke(); }
+    for (let y = 30; y < H; y += 36) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+
+    // Line glow
+    const lg = ctx.createLinearGradient(MX-20, 0, MX+20, 0);
+    lg.addColorStop(0, 'rgba(255,255,255,0)');
+    lg.addColorStop(0.5, 'rgba(255,255,255,0.12)');
+    lg.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = lg; ctx.fillRect(MX-20, 0, 40, H);
+
+    // Segments scrolling
+    const segs = [];
+    const segH = H * 0.18;
+    const gapH = H * 0.22;
+    let sy = (t * 60) % (segH + gapH) - (segH + gapH);
+    while (sy < H + segH) {
+      segs.push(sy);
+      sy += segH + gapH;
+    }
+
+    for (const s of segs) {
+      ctx.fillStyle = '#eef4ff';
+      ctx.fillRect(MX - 3, s, 6, segH);
+    }
+
+    // Gap caps
+    for (const s of segs) {
+      const capY = s + segH;
+      if (capY > 0 && capY < H) {
+        ctx.fillStyle = '#ffd166';
+        ctx.fillRect(MX - 8, capY - 2, 16, 4);
+      }
+      if (s > 0 && s < H) {
+        ctx.fillStyle = '#ffd166';
+        ctx.fillRect(MX - 8, s - 2, 16, 4);
+      }
+    }
+
+    // Player ball
+    const bx = MX + Math.cos(t * 1.2) * 55 + (Math.cos(t * 1.2) > 0 ? 18 : -18);
+    const by = H * 0.5 + Math.sin(t * 0.7) * H * 0.06;
+    const col = bx > MX ? '#37d7ff' : '#ef67ff';
+    const aura = ctx.createRadialGradient(bx, by, 2, bx, by, 22);
+    aura.addColorStop(0, col.replace(')', ',0.28)').replace('rgb', 'rgba'));
+    aura.addColorStop(1, col.replace(')', ',0)').replace('rgb', 'rgba'));
+    ctx.fillStyle = aura; ctx.beginPath(); ctx.arc(bx, by, 22, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = col; ctx.beginPath(); ctx.arc(bx, by, 9, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = 'rgba(255,255,255,0.5)'; ctx.beginPath(); ctx.arc(bx-2.5, by-2.5, 3, 0, Math.PI*2); ctx.fill();
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+})();
+</script>
+</body>
+</html>
