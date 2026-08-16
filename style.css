@@ -399,6 +399,72 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   width: 100%; height: 100%;
   display: block;
 }
+.fitlogr-preview {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(29,158,117,0.25), rgba(29,158,117,0) 45%),
+    radial-gradient(circle at 86% 80%, rgba(242,166,35,0.2), rgba(242,166,35,0) 46%),
+    #121521;
+}
+.fitlogr-carousel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.fitlogr-carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.fitlogr-slide {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+  object-fit: contain;
+  object-position: center;
+  background: radial-gradient(circle at center, rgba(23,26,38,0.65), rgba(10,12,20,0.95));
+}
+.fitlogr-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,0.45);
+  border-radius: 50%;
+  background: rgba(16,19,30,0.65);
+  color: #f5f8ff;
+  backdrop-filter: blur(4px);
+  transition: background var(--transition), border-color var(--transition);
+}
+.fitlogr-carousel-btn:hover {
+  background: rgba(16,19,30,0.9);
+  border-color: rgba(255,255,255,0.78);
+}
+.fitlogr-carousel-btn svg {
+  width: 16px;
+  height: 16px;
+}
+.fitlogr-carousel-prev {
+  left: 14px;
+}
+.fitlogr-carousel-next {
+  right: 14px;
+}
+@media (max-width: 640px) {
+  .fitlogr-carousel-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .fitlogr-carousel-prev { left: 10px; }
+  .fitlogr-carousel-next { right: 10px; }
+}
 .upcoming-preview {
   background: var(--stone);
   display: flex;
