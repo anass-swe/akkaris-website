@@ -473,6 +473,23 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .upcoming-mark { opacity: 0.5; }
 
+.fruitquest-preview {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(226,73,58,0.28), rgba(226,73,58,0) 45%),
+    radial-gradient(circle at 86% 82%, rgba(94,168,74,0.26), rgba(94,168,74,0) 46%),
+    #121521;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.fruitquest-logo {
+  max-width: 55%;
+  max-height: 85%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 28px rgba(0,0,0,0.35));
+}
+
 .game-badge {
   position: absolute;
   top: 14px; left: 14px;
