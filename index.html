@@ -168,6 +168,70 @@
         </div>
       </article>
 
+      <!-- FLOWLINE -->
+      <article class="game-card" id="flowline">
+        <div class="game-card-visual">
+          <div class="game-preview flowline-preview" aria-label="Flowline game preview">
+            <div class="flowline-carousel" id="flowline-carousel" aria-live="polite">
+              <div class="flowline-carousel-track">
+                <img src="assets/flowline/portrait-main-screen.jpeg" alt="Flowline main menu" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-gameplay-screen-1.jpeg" alt="Flowline 5×5 level in progress" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-collections-screen.jpeg" alt="Flowline level collections from Starter to Master" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-gameplay-screen-2.jpeg" alt="Flowline 9×9 expert level" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-solved-screen.jpeg" alt="Flowline solved level with confetti" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-numbers-hint-screen.jpeg" alt="Flowline with numbers on dots and a hint-revealed path" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-master-screen.jpeg" alt="Flowline 10×10 master level" class="flowline-slide flowline-slide-portrait" loading="lazy">
+                <img src="assets/flowline/portrait-levels-screen.jpeg" alt="Flowline level grid" class="flowline-slide flowline-slide-portrait" loading="lazy">
+              </div>
+              <button class="flowline-carousel-btn flowline-carousel-prev" type="button" aria-label="Previous Flowline screenshot">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="flowline-carousel-btn flowline-carousel-next" type="button" aria-label="Next Flowline screenshot">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="game-badge game-badge-soon">Soon</div>
+          </div>
+        </div>
+        <div class="game-card-body">
+          <div class="game-meta">
+            <span class="game-tag">Mobile</span>
+            <span class="game-tag">Puzzle</span>
+            <span class="game-tag">Free</span>
+          </div>
+          <h3 class="game-title">Flowline</h3>
+          <p class="game-desc">
+            Connect the dots. Fill the board. A calm path puzzle with 250 hand-verified levels
+            across six collections, from a gentle 5×5 start to 10×10 Master boards — every one
+            with a single solution. Full-path hints when you're stuck, a challenge level every
+            few boards, and numbers on dots for colour-blind players.
+          </p>
+          <div class="game-details">
+            <div class="game-detail">
+              <span class="detail-label">Platform</span>
+              <span class="detail-value">Android</span>
+            </div>
+            <div class="game-detail">
+              <span class="detail-label">Genre</span>
+              <span class="detail-value">Puzzle · Logic</span>
+            </div>
+            <div class="game-detail">
+              <span class="detail-label">Price</span>
+              <span class="detail-value">Free to play</span>
+            </div>
+          </div>
+          <div class="game-actions">
+            <!-- Once published, replace with the Google Play badge link, same pattern as
+                 Splitline above (id=com.nimbleways.flowline). -->
+            <span class="btn-ghost" aria-disabled="true">Coming soon to Google Play</span>
+          </div>
+        </div>
+      </article>
+
       <!-- FRUIT QUEST -->
       <article class="game-card" id="fruitquest">
         <div class="game-card-visual">
@@ -469,6 +533,7 @@ function initCarousel(prefix) {
   startAuto();
 }
 initCarousel('splitline');
+initCarousel('flowline');
 initCarousel('fitlogr');
 
 // Star field canvas

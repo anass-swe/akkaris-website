@@ -10,9 +10,11 @@ This repository contains the source for the studio website and the current game 
 - Game showcase
 - Privacy policy for the available games
 
-## Current game
+## Current games
 
 - Splitline
+- Flowline
+- Fruit Quest (coming soon)
 
 ## Links
 
@@ -24,6 +26,9 @@ This repository contains the source for the studio website and the current game 
 
 Akkaris builds mobile games with tight mechanics, clear feedback, and respect for the player’s time.
 
-## About the game
+## About the games
 
 Splitline is a free mobile arcade game that focuses on simple controls and fast, skill-based gameplay.
+
+Flowline is a calm "connect the dots, fill the board" puzzle game: 250 hand-verified levels across six
+collections, coins, hints and optional rewarded ads.
