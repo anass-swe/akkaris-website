@@ -171,6 +171,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   color: var(--text-primary);
   letter-spacing: -0.01em;
 }
+.section-lead {
+  margin-top: 12px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 520px;
+}
 .serif-italic {
   font-family: var(--font-serif);
   font-style: italic;
@@ -267,10 +273,36 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   opacity: 0;
   animation: fadeUp 0.7s 0.6s cubic-bezier(0.16,1,0.3,1) forwards;
 }
-.hero-content .btn-primary {
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px 28px;
+  flex-wrap: wrap;
   opacity: 0;
   animation: fadeUp 0.6s 0.65s cubic-bezier(0.16,1,0.3,1) forwards;
 }
+.hero-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: opacity var(--transition);
+}
+.hero-live:hover { opacity: 0.8; }
+.hero-live-icons { display: flex; }
+.hero-live-icons img {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  border: 2px solid var(--ink);
+  margin-left: -8px;
+}
+.hero-live-icons img:first-child { margin-left: 0; }
+.hero-live-text {
+  font-size: 13px;
+  line-height: 1.35;
+  color: rgba(250,250,247,0.85);
+}
+.hero-live-text span { color: rgba(250,250,247,0.45); }
 .hero-mark {
   position: relative; z-index: 2;
   flex-shrink: 0;
@@ -294,9 +326,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   padding: clamp(64px, 10vw, 120px) 0;
   background: var(--stone-2);
 }
+.games-section-alt {
+  background: var(--stone);
+  border-top: 1px solid var(--border-light);
+}
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr));
   gap: clamp(20px, 3vw, 32px);
 }
 
@@ -321,176 +357,70 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 .game-card-visual { position: relative; }
 .game-preview {
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   position: relative;
   overflow: hidden;
   background: var(--ink);
 }
-.splitline-preview {
+/* Per-game backdrops behind the screenshots */
+.preview-splitline {
   background:
     radial-gradient(circle at 10% 16%, rgba(55,215,255,0.25), rgba(55,215,255,0) 45%),
     radial-gradient(circle at 84% 82%, rgba(239,103,255,0.24), rgba(239,103,255,0) 46%),
     #121521;
 }
-.splitline-carousel {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-.splitline-carousel-track {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
-}
-.splitline-slide {
-  width: 100%;
-  height: 100%;
-  flex: 0 0 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.splitline-slide-portrait {
-  object-fit: contain;
-  background: radial-gradient(circle at center, rgba(23,26,38,0.65), rgba(10,12,20,0.95));
-}
-.splitline-carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: 1px solid rgba(255,255,255,0.45);
-  border-radius: 50%;
-  background: rgba(16,19,30,0.65);
-  color: #f5f8ff;
-  backdrop-filter: blur(4px);
-  transition: background var(--transition), border-color var(--transition);
-}
-.splitline-carousel-btn:hover {
-  background: rgba(16,19,30,0.9);
-  border-color: rgba(255,255,255,0.78);
-}
-.splitline-carousel-btn svg {
-  width: 16px;
-  height: 16px;
-}
-.splitline-carousel-prev {
-  left: 14px;
-}
-.splitline-carousel-next {
-  right: 14px;
-}
-@media (max-width: 640px) {
-  .splitline-carousel-btn {
-    width: 32px;
-    height: 32px;
-  }
-  .splitline-carousel-prev { left: 10px; }
-  .splitline-carousel-next { right: 10px; }
-}
 /* Flowline: cream board, ink, orange accent (matches the game's own palette) */
-.flowline-preview {
+.preview-flowline {
   background:
     radial-gradient(circle at 12% 18%, rgba(255,77,0,0.22), rgba(255,77,0,0) 46%),
     radial-gradient(circle at 86% 84%, rgba(0,85,255,0.18), rgba(0,85,255,0) 46%),
-    #ede8e0;
+    #e6e0d6;
 }
-.flowline-carousel {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
+.preview-fruitquest {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(226,73,58,0.32), rgba(226,73,58,0) 45%),
+    radial-gradient(circle at 86% 82%, rgba(94,168,74,0.3), rgba(94,168,74,0) 46%),
+    #16201a;
 }
-.flowline-carousel-track {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
-}
-.flowline-slide {
-  width: 100%;
-  height: 100%;
-  flex: 0 0 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.flowline-slide-portrait {
-  object-fit: contain;
-  background: radial-gradient(circle at center, rgba(245,240,232,0.6), rgba(221,216,207,0.95));
-}
-.flowline-carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: 1px solid rgba(26,26,26,0.25);
-  border-radius: 50%;
-  background: rgba(245,240,232,0.85);
-  color: #1a1a1a;
-  backdrop-filter: blur(4px);
-  transition: background var(--transition), border-color var(--transition);
-}
-.flowline-carousel-btn:hover {
-  background: #1a1a1a;
-  border-color: #1a1a1a;
-  color: #f5f0e8;
-}
-.flowline-carousel-btn svg {
-  width: 16px;
-  height: 16px;
-}
-.flowline-carousel-prev { left: 14px; }
-.flowline-carousel-next { right: 14px; }
-@media (max-width: 640px) {
-  .flowline-carousel-btn { width: 32px; height: 32px; }
-  .flowline-carousel-prev { left: 10px; }
-  .flowline-carousel-next { right: 10px; }
-}
-
-.game-canvas {
-  width: 100%; height: 100%;
-  display: block;
-}
-.fitlogr-preview {
+.preview-fitlogr {
   background:
     radial-gradient(circle at 12% 20%, rgba(29,158,117,0.25), rgba(29,158,117,0) 45%),
     radial-gradient(circle at 86% 80%, rgba(242,166,35,0.2), rgba(242,166,35,0) 46%),
     #121521;
 }
-.fitlogr-carousel {
+
+/* ── Screenshot strip ──────────────────────────────────── */
+.shots {
   position: absolute;
   inset: 0;
-  overflow: hidden;
 }
-.fitlogr-carousel-track {
+.shots-track {
+  --shots-pad: clamp(44px, 9%, 60px);
   display: flex;
-  width: 100%;
+  gap: 14px;
   height: 100%;
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
+  padding: clamp(18px, 5%, 28px) var(--shots-pad);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--shots-pad);
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
 }
-.fitlogr-slide {
-  width: 100%;
+.shots-track::-webkit-scrollbar { display: none; }
+.shots-track:focus-visible { outline: 2px solid var(--amber); outline-offset: -4px; }
+.shots-track img {
+  flex: 0 0 auto;
   height: 100%;
-  flex: 0 0 100%;
-  object-fit: contain;
-  object-position: center;
-  background: radial-gradient(circle at center, rgba(23,26,38,0.65), rgba(10,12,20,0.95));
+  width: auto;
+  border-radius: 14px;
+  scroll-snap-align: start;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.32);
+  user-select: none;
+  -webkit-user-drag: none;
 }
-.fitlogr-carousel-btn {
+.shots-light .shots-track img { box-shadow: 0 10px 28px rgba(60,40,20,0.2); }
+.shots-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -506,29 +436,34 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   background: rgba(16,19,30,0.65);
   color: #f5f8ff;
   backdrop-filter: blur(4px);
-  transition: background var(--transition), border-color var(--transition);
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
 }
-.fitlogr-carousel-btn:hover {
+.shots-btn:hover {
   background: rgba(16,19,30,0.9);
   border-color: rgba(255,255,255,0.78);
 }
-.fitlogr-carousel-btn svg {
-  width: 16px;
-  height: 16px;
+.shots-light .shots-btn {
+  border-color: rgba(26,26,26,0.25);
+  background: rgba(245,240,232,0.85);
+  color: #1a1a1a;
 }
-.fitlogr-carousel-prev {
-  left: 14px;
+.shots-light .shots-btn:hover {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #f5f0e8;
 }
-.fitlogr-carousel-next {
-  right: 14px;
-}
+.shots-btn svg { width: 16px; height: 16px; }
+.shots-prev { left: 8px; }
+.shots-next { right: 8px; }
 @media (max-width: 640px) {
-  .fitlogr-carousel-btn {
-    width: 32px;
-    height: 32px;
-  }
-  .fitlogr-carousel-prev { left: 10px; }
-  .fitlogr-carousel-next { right: 10px; }
+  .shots-btn { width: 32px; height: 32px; }
+  .shots-prev { left: 6px; }
+  .shots-next { right: 6px; }
+}
+@media (hover: none) {
+  /* Swiping is the natural gesture on touch screens */
+  .shots-btn { display: none; }
+  .shots-track { --shots-pad: 18px; }
 }
 .upcoming-preview {
   background: var(--stone);
@@ -538,25 +473,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .upcoming-mark { opacity: 0.5; }
 
-.fruitquest-preview {
-  background:
-    radial-gradient(circle at 14% 18%, rgba(226,73,58,0.28), rgba(226,73,58,0) 45%),
-    radial-gradient(circle at 86% 82%, rgba(94,168,74,0.26), rgba(94,168,74,0) 46%),
-    #121521;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px;
-}
-.fruitquest-logo {
-  max-width: 55%;
-  max-height: 85%;
-  object-fit: contain;
-  filter: drop-shadow(0 12px 28px rgba(0,0,0,0.35));
-}
-
 .game-badge {
   position: absolute;
+  z-index: 3;
   top: 14px; left: 14px;
   background: var(--amber);
   color: var(--ink);
@@ -608,6 +527,24 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   line-height: 1.2;
 }
 .game-title-dim { color: var(--text-dim); }
+.game-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.game-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.game-subtitle {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
 .game-desc {
   font-size: 14px;
   line-height: 1.7;
@@ -643,7 +580,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 .game-actions {
   display: flex;
-  gap: 30px;
+  gap: 12px 24px;
   align-items: center;
   flex-wrap: wrap;
   margin-top: auto;
@@ -660,6 +597,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   display: block;
   height: 40px;
   width: auto;
+}
+.text-link {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+.text-link:hover {
+  color: var(--amber-deep);
+  text-decoration-color: var(--amber-deep);
 }
 
 /* ── About section ─────────────────────────────────────── */
@@ -719,6 +668,16 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   gap: 10px;
   flex-wrap: wrap;
 }
+.about-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  font-size: 15px;
+  color: var(--amber);
+  transition: gap var(--transition), color var(--transition);
+}
+.about-contact:hover { gap: 12px; color: var(--amber-pale); }
 .about-tag {
   font-size: 12px;
   color: rgba(250,250,247,0.45);
@@ -789,6 +748,27 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   color: rgba(250,250,247,0.5);
   line-height: 1.7;
 }
+.privacy-jump {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+.privacy-jump a {
+  font-size: 13px;
+  color: rgba(250,250,247,0.75);
+  border: 1px solid rgba(255,255,255,0.14);
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+.privacy-jump a:hover {
+  color: var(--ink);
+  background: var(--amber);
+  border-color: var(--amber);
+}
+.privacy-game-block[id] { scroll-margin-top: 88px; }
 .privacy-content {
   max-width: 720px;
   margin: 0 auto;
