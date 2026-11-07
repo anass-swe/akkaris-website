@@ -817,9 +817,9 @@
           never transmitted to our servers — Smoke Streets has no server and no account.
         </li>
         <li>
-          <strong>Gameplay statistics</strong> — runs, run length, score, cause of crash, car used,
-          ads watched and session length, written to a log on your device to help balance the
-          game. It is not sent to us.
+          <strong>Usage statistics</strong> — Smoke Streets uses Google Analytics for Firebase to
+          learn how the game is played (for example which worlds are too hard). See the Analytics
+          section below for details.
         </li>
         <li>
           <strong>Advertising data</strong> — Smoke Streets displays ads served by Google AdMob: a
@@ -839,7 +839,7 @@
         <li>We do not collect your name, email address, or any contact information</li>
         <li>We do not collect your precise (GPS) location, contacts or photos</li>
         <li>We do not require account registration</li>
-        <li>We do not use analytics or crash-reporting SDKs</li>
+        <li>We do not use a crash-reporting SDK</li>
         <li>There are no in-app purchases — coins are earned only by playing</li>
         <li>We do not collect data from children under 13 knowingly</li>
       </ul>
@@ -898,6 +898,37 @@
     </div>
 
     <div class="privacy-section">
+      <h3>Analytics — Google Analytics for Firebase</h3>
+      <p>
+        Smoke Streets uses Google Analytics for Firebase, operated by Google LLC, to understand
+        how the game is played and to improve it. It records:
+      </p>
+      <ul>
+        <li>Runs (score, distance, how the run ended, car and world), missions, driver levels, unlocks, and cars and paint jobs bought with coins</li>
+        <li>Screens opened, ads watched and answers to the rating prompt</li>
+        <li>A random app-instance identifier created by Firebase (not your advertising ID)</li>
+        <li>Device information (model, OS version, language) and an approximate country or region derived from your IP address</li>
+      </ul>
+      <p style="margin-top:10px;">
+        Usage statistics are not linked to your name or to any account, are not used for
+        advertising or ad personalization, and are deleted automatically after 14 months.
+        Uninstalling the app resets the app-instance identifier. Where the law requires consent
+        (European Economic Area, United Kingdom, Switzerland), they follow your answer to the
+        consent dialog.
+      </p>
+      <p style="margin-top:10px;">
+        How Google uses this data:
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">
+          policies.google.com/technologies/partner-sites
+        </a>
+        · Firebase privacy:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+          firebase.google.com/support/privacy
+        </a>
+      </p>
+    </div>
+
+    <div class="privacy-section">
       <h3>Sharing and contact</h3>
       <p>
         The Share button opens your phone's share sheet with a short text about your score;
@@ -910,7 +941,8 @@
     <div class="privacy-section">
       <h3>Permissions</h3>
       <p>
-        Smoke Streets requests Internet and network-state access, used to load advertisements,
+        Smoke Streets requests Internet and network-state access, used to load advertisements and
+        send usage statistics,
         and the vibration permission for optional haptic feedback, which you can turn off in the
         game's settings.
       </p>
@@ -938,7 +970,8 @@
       </ul>
       <p style="margin-top:10px;">
         Since all game data is stored locally on your device, you can exercise your right
-        to deletion by uninstalling the app. For advertising data held by Google, please
+        to deletion by uninstalling the app (which also resets the analytics identifier). For
+        advertising and analytics data held by Google, please
         refer to Google's privacy tools at
         <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">
           myaccount.google.com/data-and-privacy
@@ -948,11 +981,15 @@
 
     <div class="privacy-section">
       <h3>Third-party services</h3>
-      <p>The following third-party service is used in Smoke Streets:</p>
+      <p>The following third-party services are used in Smoke Streets:</p>
       <ul>
         <li>
           <strong>Google AdMob</strong> —
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        </li>
+        <li>
+          <strong>Google Analytics for Firebase</strong> —
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy and Security in Firebase</a>
         </li>
       </ul>
     </div>
