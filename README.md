@@ -15,6 +15,7 @@ This repository contains the source for the studio website and the current game 
 - Fruit Quest — [Google Play](https://play.google.com/store/apps/details?id=site.akkaris.fruitquest)
 - Flowline — [Google Play](https://play.google.com/store/apps/details?id=site.akkaris.flowline)
 - Splitline — [Google Play](https://play.google.com/store/apps/details?id=site.akkaris.splitline)
+- Smoke Streets (game, coming soon) — package `site.akkaris.smokestreets`
 - FitLogr (app, coming soon)
 
 ## Links
@@ -33,6 +34,9 @@ Splitline is a free mobile arcade game that focuses on simple controls and fast,
 
 Flowline is a calm "connect the dots, fill the board" puzzle game: 280 hand-made levels across seven
 collections, a daily puzzle, three stars per level, hints and optional rewarded ads.
+
+Smoke Streets is a one-thumb car drift game: endless streets through five worlds, chasing the
+high score, with missions, a daily road and 15 cars to unlock (coming soon on Google Play).
 
 Fruit Quest is a trajectory-based archery game across seven fruit-filled worlds, with elemental arrows,
 combos, an Endless mode and daily challenges.

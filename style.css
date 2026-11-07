@@ -382,6 +382,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
     radial-gradient(circle at 86% 82%, rgba(94,168,74,0.3), rgba(94,168,74,0) 46%),
     #16201a;
 }
+/* Smoke Streets: Majorelle blue sunburst and taxi red, like its icon */
+.preview-smokestreets {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(127,180,255,0.32), rgba(127,180,255,0) 46%),
+    radial-gradient(circle at 86% 82%, rgba(201,58,48,0.3), rgba(201,58,48,0) 46%),
+    #10203f;
+}
 .preview-fitlogr {
   background:
     radial-gradient(circle at 12% 20%, rgba(29,158,117,0.25), rgba(29,158,117,0) 45%),
