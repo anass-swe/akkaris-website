@@ -38,8 +38,8 @@ collections, a daily puzzle, three stars per level, hints and optional rewarded 
 Smoke Streets is a one-thumb car drift game: endless streets through five worlds, chasing the
 high score, with missions, a daily road and 15 cars to unlock (coming soon on Google Play).
 
-Fruit Quest is a trajectory-based archery game across seven fruit-filled worlds, with elemental arrows,
-combos, an Endless mode and daily challenges.
+Fruit Quest is a relaxing triple tile match puzzle: 200 levels across ten fruit worlds, hidden fruit,
+a star clock with no time limit, boosters and a daily puzzle (version 2.0 replaced the earlier archery game).
 
 ## Adding a game
 

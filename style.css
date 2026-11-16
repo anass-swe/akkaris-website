@@ -376,11 +376,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
     radial-gradient(circle at 86% 84%, rgba(0,85,255,0.18), rgba(0,85,255,0) 46%),
     #e6e0d6;
 }
+/* Fruit Quest: warm orange sunburst and strawberry pink, like its icon */
 .preview-fruitquest {
   background:
-    radial-gradient(circle at 14% 18%, rgba(226,73,58,0.32), rgba(226,73,58,0) 45%),
-    radial-gradient(circle at 86% 82%, rgba(94,168,74,0.3), rgba(94,168,74,0) 46%),
-    #16201a;
+    radial-gradient(circle at 14% 18%, rgba(255,111,60,0.36), rgba(255,111,60,0) 45%),
+    radial-gradient(circle at 86% 82%, rgba(232,62,116,0.32), rgba(232,62,116,0) 46%),
+    #22160f;
 }
 /* Smoke Streets: Majorelle blue sunburst and taxi red, like its icon */
 .preview-smokestreets {
